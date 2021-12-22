@@ -1,0 +1,62 @@
+/*
+$blue-crayola: rgba(37 , 110 , 255 , 1);
+$spanish-violet: rgba(70 , 35 , 122 , 1);
+$medium-aquamarine: rgba(61 , 220 , 151 , 1);
+$white: rgba(252 , 252 , 252 , 1);
+$sizzling-red: rgba(255 , 73 , 92 , 1);
+
+font-family: Shizuru, cursive;
+font-family: Merriweather, serif; */
+
+body {
+  margin: 0;
+  background-color: rgba(252 , 252 , 252 , 1);
+}
+
+#title {
+  text-align: center;
+  font-family: Shizuru, cursive;
+  font-weight: 500;
+  font-size: 50px;
+  color: rgba(255 , 73 , 92 , 1);
+  text-shadow: 2px 2px 3px rgba(70 , 35 , 122 , 1);
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+header {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+main {
+  text-align: center;
+  margin-left: 10px;
+}
+
+#rgb-color {
+  font-family: Merriweather, serif;
+  font-size: 35px;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: rgba(70 , 35 , 122 , 1);
+  border-top: 4px solid rgba(61 , 220 , 151 , 1);
+  padding-top: 10px;
+}
+
+#rodape {
+  text-align: center;
+  font-family: Ubuntu, sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+  color: rgba(252 , 252 , 252 , 1);
+  text-shadow: 1px 1px 2px rgba(37 , 110 , 255 , 1);
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
