@@ -1,5 +1,7 @@
 const cores = document.querySelectorAll('.ball');
 const codigo = document.getElementById('rgb-color');
+const pontos = document.getElementById('score');
+let codAtual = '';
 
 // Consultei o seguinte site para conseguir montar a função de geração de cores aleatórias.
 // https://www.ti-enxame.com/pt/javascript/gerador-de-cores-aleatorias/967183954/
@@ -14,15 +16,27 @@ function alocaCores() {
   }
 
   codigo.textContent = cores[Math.floor(Math.random() * 6)].style.backgroundColor;
+  // codigo.style.color = codigo.textContent;
 
   return cores;
 }
 
 window.onload = alocaCores();
 
+function pontuacao() {
+  let valor = parseInt(pontos.textContent, 10);
+
+  if (codAtual !== codigo.textContent) {
+    valor += 3;
+    codAtual = codigo.textContent;
+  }
+
+  pontos.textContent = valor;
+}
+
 const resposta = document.getElementById('answer');
 
-function selecao(evento) {
+function resultado(evento) {
   const selecionado = evento.target;
 
   for (let i = 0; i < cores.length; i += 1) {
@@ -36,19 +50,21 @@ function selecao(evento) {
 
   if (codigo.textContent === cor) {
     resposta.textContent = 'Acertou!';
+    pontuacao();
   } else {
     resposta.textContent = 'Errou! Tente novamente!';
   }
 }
 
 for (let i = 0; i < cores.length; i += 1) {
-  cores[i].addEventListener('click', selecao);
+  cores[i].addEventListener('click', resultado);
 }
 
 const reset = document.getElementById('reset-game');
 
 function resetar() {
-  window.location.reload();
+  alocaCores();
+  resposta.textContent = 'Escolha uma cor';
 }
 
 reset.addEventListener('click', resetar);
