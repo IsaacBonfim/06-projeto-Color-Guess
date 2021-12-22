@@ -44,3 +44,11 @@ function selecao(evento) {
 for (let i = 0; i < cores.length; i += 1) {
   cores[i].addEventListener('click', selecao);
 }
+
+const reset = document.getElementById('reset-game');
+
+function resetar() {
+  window.location.reload();
+}
+
+reset.addEventListener('click', resetar);

@@ -78,6 +78,36 @@ main {
   text-shadow: 1px 1px 2px rgba(37, 110, 255, 1);
 }
 
+#reset-game {
+  font-family: Merriweather, serif;
+  font-size: 15px;
+  color: rgba(37, 110, 255, 1);
+  text-shadow: 1px 1px 2px rgba(70, 35, 122, 1);
+  padding: 5px;
+  border: 3px solid rgba(37, 110, 255, 1);
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+#reset-game:hover {
+  text-shadow: 1px 1px 2px rgba(255, 73, 92, 1);
+  box-shadow: -1px -1px 2px rgba(70, 35, 122, 1),
+  1px -1px 2px rgba(70, 35, 122, 1),
+  -1px 1px 2px rgba(70, 35, 122, 1),
+  1px 1px 2px rgba(70, 35, 122, 1);
+}
+
+#reset-game:active {
+  color: rgba(70, 35, 122, 1);
+  text-shadow: 1px 1px 2px rgba(37, 110, 255, 1);
+  background-color: rgba(61, 220, 151, 1);
+  box-shadow: -2px -2px 3px rgba(70, 35, 122, 1),
+  2px -2px 3px rgba(70, 35, 122, 1),
+  -2px 2px 3px rgba(70, 35, 122, 1),
+  2px 2px 3px rgba(70, 35, 122, 1);
+}
+
 footer {
   position: absolute;
   width: 100%;
