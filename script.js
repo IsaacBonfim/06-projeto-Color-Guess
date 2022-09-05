@@ -65,6 +65,11 @@ const reset = document.getElementById('reset-game');
 function resetar() {
   alocaCores();
   resposta.textContent = 'Escolha uma cor';
+
+  for (let i = 0; i < cores.length; i += 1) {
+    cores[i].style.border = '1px solid rgba(0, 0, 0, 1)';
+    cores[i].style.boxShadow = '2px 2px 3px rgba(0, 0, 0, 1)';
+  }
 }
 
 reset.addEventListener('click', resetar);
